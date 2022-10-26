@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from industrialmarketer.com/strategy/search-engine-marketing-strategy/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Oct 2022 17:33:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-1e239afaaad019bbf58",applicationID:"377067338"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https:///")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+    <title>Search Engine Marketing Strategy Archives - Industrial Marketer</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="alternate" type="application/rss+xml" title="Industrial Marketer RSS Feed" href="../../feed/index.html"/>
+    <link rel="stylesheet" type="text/css" href="../../wp-content/themes/ism/css/styleb0e7.css?v=1467231">
+    <link rel="icon" href="../../favicon3860.png?v=1">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v19.0 - https://yoast.com/wordpress/plugins/seo/ -->
+	<link rel="canonical" href="index.html" />
+	<link rel="next" href="page/2/index.html" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Search Engine Marketing Strategy Archives - Industrial Marketer" />
+	<meta property="og:url" content="https://industrialmarketer.com/strategy/search-engine-marketing-strategy/" />
+	<meta property="og:site_name" content="Industrial Marketer" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://industrialmarketer.com/#website","url":"https://industrialmarketer.com/","name":"Industrial Marketer","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://industrialmarketer.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"CollectionPage","@id":"https://industrialmarketer.com/strategy/search-engine-marketing-strategy/#webpage","url":"https://industrialmarketer.com/strategy/search-engine-marketing-strategy/","name":"Search Engine Marketing Strategy Archives - Industrial Marketer","isPartOf":{"@id":"https://industrialmarketer.com/#website"},"breadcrumb":{"@id":"https://industrialmarketer.com/strategy/search-engine-marketing-strategy/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://industrialmarketer.com/strategy/search-engine-marketing-strategy/"]}]},{"@type":"BreadcrumbList","@id":"https://industrialmarketer.com/strategy/search-engine-marketing-strategy/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://industrialmarketer.com/"},{"@type":"ListItem","position":2,"name":"Strategy","item":"https://industrialmarketer.com/strategy/"},{"@type":"ListItem","position":3,"name":"Search Engine Marketing Strategy"}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel="https://api.w.org/" href="../../wp-json/index.html" /><link rel="alternate" type="application/json" href="../../wp-json/wp/v2/categories/148.json" />        <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NFHM9WJ');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body class="archive category category-search-engine-marketing-strategy category-148">
+<div id="wrapper">
+    <header role="banner" id="header">
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="full">
+                        <div class="attribution hidden-xs">
+                            B2B Marketing Insights from <a href="https://industrialstrengthmarketing.com/?utm_source=IndustrialMarketer&amp;utm_medium=website&amp;utm_campaign=im.com%20Header" target="_blank" rel="noopener"><img src="../../wp-content/themes/ism/img/industrial-logo-dark.svg" width="85" height="13" class="" alt="Industrial Strength Marketing"/></a>
+                        </div>
+                        <div id="search-form">
+                            <div class="social-links  hidden-xs">
+                                <a href="https://www.facebook.com/IndustrialMarketer?fref=ts" target="_blank" rel="noopener"><span class="icon icon-fb"><span class="sr-only">Visit us on Facebook</span></span></a>
+                                <a href="https://twitter.com/indmktr" target="_blank" rel="noopener"><span class="icon icon-tw"></span><span class="sr-only">Visit us on Twitter</span></a>
+                                <a href="https://www.linkedin.com/company/industrialmarketer/" rel="noopener" target="_blank"><span class="icon icon-in"></span><span class="sr-only">Connect on Linkedin</span></a>
+                            </div>
+                            <form action="https://industrialmarketer.com/" method="get" id="searchform" class="form-inline">
+                                <input type="text" name="s" placeholder="search for..." class="form-control" id="search-field"/><button class="btn btn-default" id="btn-search" aria-label="Search"><span class="icon icon-search"></span></button>
+                            </form>
+                        </div>
+                        <a href="../../index.html"><img src="../../wp-content/themes/ism/img/logo.svg" width="191" height="171" class="logo img-responsive" alt="Industrial Marketer"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container nav-container" id="main-nav">
+            <div class="row">
+                <div class="full">
+                    <button type="button" class="navbar-toggle" data-toggle-offcanvas="offcanvas" data-target="#nav-bar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                     <a href="../../index.html" class="affixed-logo">Industrial Marketer</a>
+                    <nav class="navbar">
+                        <div class="navbar-collapse collapse navbar-offcanvas transform" id="nav-bar-collapse" >
+                            <ul id="menu-main" class="nav navbar-nav"><li id="menu-item-250683" class="menu-item menu-item-type-taxonomy menu-item-object-category current-category-ancestor current-menu-ancestor current-menu-parent current-category-parent menu-item-has-children menu-item-250683 dropdown"><a title="Strategy" href="../index.html" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Strategy <span class="caret"></span></a>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-250688" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-250688"><a title="Brand" href="../brand-strategy/index.html">Brand</a></li>
+	<li id="menu-item-250686" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-250686"><a title="Content" href="../content-marketing-strategy/index.html">Content</a></li>
+	<li id="menu-item-251342" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-251342"><a title="Email" href="../email-marketing-strategy/index.html">Email</a></li>
+	<li id="menu-item-250687" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-250687 active"><a title="Search" href="index.html">Search</a></li>
+	<li id="menu-item-250684" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-250684"><a title="Social Media" href="../social-media-marketing-strategy/index.html">Social Media</a></li>
+	<li id="menu-item-250685" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-250685"><a title="Web" href="../web-strategy/index.html">Web</a></li>
+</ul>
+</li>
+<li id="menu-item-250679" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-250679 dropdown"><a title="Technology" href="../../technology/index.html" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Technology <span class="caret"></span></a>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-250681" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-250681"><a title="News" href="../../technology/news/index.html">News</a></li>
+	<li id="menu-item-250680" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-250680"><a title="Tools" href="../../technology/tools/index.html">Tools</a></li>
+	<li id="menu-item-250682" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-250682"><a title="Tutorials" href="../../technology/tutorials/index.html">Tutorials</a></li>
+</ul>
+</li>
+<li id="menu-item-250689" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-250689 dropdown"><a title="Culture" href="../../culture/index.html" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Culture <span class="caret"></span></a>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-250690" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-250690"><a title="Campaigns" href="../../culture/campaigns/index.html">Campaigns</a></li>
+	<li id="menu-item-250691" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-250691"><a title="Commentary" href="../../culture/commentary/index.html">Commentary</a></li>
+	<li id="menu-item-250791" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-250791"><a title="Creativity" href="../../culture/creativity/index.html">Creativity</a></li>
+	<li id="menu-item-250792" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-250792"><a title="Reviews" href="../../culture/reviews/index.html">Reviews</a></li>
+</ul>
+</li>
+<li id="menu-item-250593" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-250593 dropdown"><a title="About" href="../../about-industrial-marketer/index.html" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">About <span class="caret"></span></a>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-250603" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-250603"><a title="Contact" href="../../contact-us/index.html">Contact</a></li>
+</ul>
+</li>
+</ul>                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+<div class="container" id="content">
+
+    <div id="inner-content" class="row">
+
+        <div id="main" class="col-sm-8" role="main">
+
+                            <h1 class="archive-title h2">
+                    <span>Posts Categorized:</span> Search Engine Marketing Strategy                </h1>
+
+            
+                            <article id="post-253286" role="article" itemscope itemtype="https://schema.org/Article" class="article">
+    <header class="article-header">
+        <h1 itemprop="name"><span class="post-type icon-post" title="Blog Post"></span><a href="../../why-seo-for-manufacturing-companies-so-important/index.html">Why SEO for Manufacturing Companies Is So Important</a></h1>
+        <div class="subhead" itemprop="headline">Figuring out how to get your website to play nice with search engines is bigger than just rankings.</div>
+            <div class="row byline">
+        <div class="col-sm-12">
+            <span class="col"><span class="icon icon-pen"></span> <em>By</em> <span itemprop="author"><a href="../../author/bleibowitz/index.html" title="Posts by Brandon Leibowitz">Brandon Leibowitz</a></span></span>
+            <span class="col time hidden"><span class="icon icon-date"></span> <em>Posted on</em> <time class="updated" content="Jun 28, 2022" itemprop="datePublished">Jun 28, 2022</time></span>
+            <span class="col hidden-xs"><span class="icon icon-date"></span> 5 minute read</span>
+        </div>
+    </div>        <a href="../../why-seo-for-manufacturing-companies-so-important/index.html" itemprop="url">
+            <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                
+                <img data-src="https://industrialmarketer.com/wp-content/uploads/2022/06/SEO-for-Manufacturing-Companies-642x347.jpeg" src="../../wp-content/themes/ism/img/blank.gif" alt="SEO for Manufacturing Companies" width="642" height="347" class="img-responsive article-image lazy" />                <meta itemprop="url" content="https://industrialmarketer.com/wp-content/uploads/2022/06/SEO-for-Manufacturing-Companies-642x347.jpeg">
+                <meta itemprop="width" content="642">
+                <meta itemprop="height" content="347">
+            </div>
+        </a>
+    </header>
+    <section class="clearfix content" itemprop="articleBody">
+        <p>When it comes to running a business in the modern world, few things are more important than optimizing and streamlining the way your business interacts with technology. One of the key ways this is achieved is through search engine optimization, or SEO, which will increase sales, draw more traffic and attention to your website, and&#8230;  <a class="excerpt-read-more" href="../../why-seo-for-manufacturing-companies-so-important/index.html" title="ReadWhy SEO for Manufacturing Companies Is So Important">Read more &raquo;</a></p>
+    </section>
+    <footer class="article-footer">
+        <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="https://industrialmarketer.com/why-seo-for-manufacturing-companies-so-important/"/>
+                <span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+            <meta itemprop="name" itemscope content="Industrial Marketer">
+
+            <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                <meta itemprop="url" content="https://industrialmarketer.com/wp-content/themes/ism/img/logo.png">
+                <meta itemprop="width" content="417">
+                <meta itemprop="height" content="141">
+            </span>
+        </span>
+        <meta itemprop="datePublished" content="2022-06-28T23:33:41+00:00"/>
+        <meta itemprop="dateModified" content="2022-08-11T22:30:42+00:00"/>
+    </footer>
+    </article>
+                            <article id="post-253259" role="article" itemscope itemtype="https://schema.org/Article" class="article">
+    <header class="article-header">
+        <h1 itemprop="name"><span class="post-type icon-post" title="Blog Post"></span><a href="../../10-effective-link-building-tactics/index.html">10 Effective Link Building Tactics for B2B Marketing</a></h1>
+        <div class="subhead" itemprop="headline">Not getting enough authority with search engines? Use these tips to build up your backlink profile.</div>
+            <div class="row byline">
+        <div class="col-sm-12">
+            <span class="col"><span class="icon icon-pen"></span> <em>By</em> <span itemprop="author"><a href="../../author/mhunter/index.html" title="Posts by Mary Hunter">Mary Hunter</a></span></span>
+            <span class="col time hidden"><span class="icon icon-date"></span> <em>Posted on</em> <time class="updated" content="Jun 7, 2022" itemprop="datePublished">Jun 7, 2022</time></span>
+            <span class="col hidden-xs"><span class="icon icon-date"></span> 5 minute read</span>
+        </div>
+    </div>        <a href="../../10-effective-link-building-tactics/index.html" itemprop="url">
+            <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                
+                <img data-src="https://industrialmarketer.com/wp-content/uploads/2022/06/Link-Building-Tactics-642x347.jpeg" src="../../wp-content/themes/ism/img/blank.gif" alt="Link Building Tactics" width="642" height="347" class="img-responsive article-image lazy" />                <meta itemprop="url" content="https://industrialmarketer.com/wp-content/uploads/2022/06/Link-Building-Tactics-642x347.jpeg">
+                <meta itemprop="width" content="642">
+                <meta itemprop="height" content="347">
+            </div>
+        </a>
+    </header>
+    <section class="clearfix content" itemprop="articleBody">
+        <p>Building a link profile has become an integral part of any industrial digital marketing strategy. However, finding methods to get backlinks seems incredibly difficult for most businesses, mainly because they don&#8217;t follow consistent link building tactics. To help address this issue, below is a list of the most effective link building tactics for B2B companies&#8230;.  <a class="excerpt-read-more" href="../../10-effective-link-building-tactics/index.html" title="Read10 Effective Link Building Tactics for B2B Marketing">Read more &raquo;</a></p>
+    </section>
+    <footer class="article-footer">
+        <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="https://industrialmarketer.com/10-effective-link-building-tactics/"/>
+                <span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+            <meta itemprop="name" itemscope content="Industrial Marketer">
+
+            <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                <meta itemprop="url" content="https://industrialmarketer.com/wp-content/themes/ism/img/logo.png">
+                <meta itemprop="width" content="417">
+                <meta itemprop="height" content="141">
+            </span>
+        </span>
+        <meta itemprop="datePublished" content="2022-06-07T19:09:00+00:00"/>
+        <meta itemprop="dateModified" content="2022-06-23T04:04:18+00:00"/>
+    </footer>
+    </article>
+                            <article id="post-253068" role="article" itemscope itemtype="https://schema.org/Article" class="article">
+    <header class="article-header">
+        <h1 itemprop="name"><span class="post-type icon-post" title="Blog Post"></span><a href="../../top-10-low-cost-marketing-strategies-for-startups/index.html">Top 10 Low-Cost Marketing Strategies for Startups</a></h1>
+        <div class="subhead" itemprop="headline">New business? Marketing doesn't have to be a big expense if you use these cost-saving tips.</div>
+            <div class="row byline">
+        <div class="col-sm-12">
+            <span class="col"><span class="icon icon-pen"></span> <em>By</em> <span itemprop="author"><a href="../../author/vkakkar/index.html" title="Posts by Vaibhav Kakkar">Vaibhav Kakkar</a></span></span>
+            <span class="col time hidden"><span class="icon icon-date"></span> <em>Posted on</em> <time class="updated" content="Jun 2, 2022" itemprop="datePublished">Jun 2, 2022</time></span>
+            <span class="col hidden-xs"><span class="icon icon-date"></span> 8 minute read</span>
+        </div>
+    </div>        <a href="../../top-10-low-cost-marketing-strategies-for-startups/index.html" itemprop="url">
+            <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                
+                <img data-src="https://industrialmarketer.com/wp-content/uploads/2022/06/Marketing-Strategies-for-Startups-1-642x347.jpeg" src="../../wp-content/themes/ism/img/blank.gif" alt="" width="642" height="347" class="img-responsive article-image lazy" />                <meta itemprop="url" content="https://industrialmarketer.com/wp-content/uploads/2022/06/Marketing-Strategies-for-Startups-1-642x347.jpeg">
+                <meta itemprop="width" content="642">
+                <meta itemprop="height" content="347">
+            </div>
+        </a>
+    </header>
+    <section class="clearfix content" itemprop="articleBody">
+        <p>According to Startup Genome, the value of the global startup economy is nearly a whopping 3 trillion dollars. Startups have been booming in recent years, making the field more competitive — and making it increasingly important that marketing strategies for startups are more innovative, defined, and cost-effective.&nbsp; The right marketing strategies for startups can help&#8230;  <a class="excerpt-read-more" href="../../top-10-low-cost-marketing-strategies-for-startups/index.html" title="ReadTop 10 Low-Cost Marketing Strategies for Startups">Read more &raquo;</a></p>
+    </section>
+    <footer class="article-footer">
+        <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="https://industrialmarketer.com/top-10-low-cost-marketing-strategies-for-startups/"/>
+                <span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+            <meta itemprop="name" itemscope content="Industrial Marketer">
+
+            <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                <meta itemprop="url" content="https://industrialmarketer.com/wp-content/themes/ism/img/logo.png">
+                <meta itemprop="width" content="417">
+                <meta itemprop="height" content="141">
+            </span>
+        </span>
+        <meta itemprop="datePublished" content="2022-06-02T03:44:30+00:00"/>
+        <meta itemprop="dateModified" content="2022-06-07T19:13:12+00:00"/>
+    </footer>
+    </article>
+                            <article id="post-252990" role="article" itemscope itemtype="https://schema.org/Article" class="article">
+    <header class="article-header">
+        <h1 itemprop="name"><span class="post-type icon-post" title="Blog Post"></span><a href="../../what-b2b-search-intent-marketing/index.html">What Is B2B Search Intent Marketing?</a></h1>
+        <div class="subhead" itemprop="headline">Intercepting search isn't enough. Make sure you deliver content that meets the user's need.</div>
+            <div class="row byline">
+        <div class="col-sm-12">
+            <span class="col"><span class="icon icon-pen"></span> <em>By</em> <span itemprop="author"><a href="../../author/ehuang/index.html" title="Posts by Elvira Huang">Elvira Huang</a></span></span>
+            <span class="col time hidden"><span class="icon icon-date"></span> <em>Posted on</em> <time class="updated" content="May 11, 2022" itemprop="datePublished">May 11, 2022</time></span>
+            <span class="col hidden-xs"><span class="icon icon-date"></span> 5 minute read</span>
+        </div>
+    </div>        <a href="../../what-b2b-search-intent-marketing/index.html" itemprop="url">
+            <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                
+                <img data-src="https://industrialmarketer.com/wp-content/uploads/2022/05/Search-Intent-Marketing-642x347.jpg" src="../../wp-content/themes/ism/img/blank.gif" alt="Search Intent Marketing" width="642" height="347" class="img-responsive article-image lazy" />                <meta itemprop="url" content="https://industrialmarketer.com/wp-content/uploads/2022/05/Search-Intent-Marketing-642x347.jpg">
+                <meta itemprop="width" content="642">
+                <meta itemprop="height" content="347">
+            </div>
+        </a>
+    </header>
+    <section class="clearfix content" itemprop="articleBody">
+        <p>Although the oft-quoted statistic that 67 percent of the B2B buyer&#8217;s journey is conducted digitally is up for debate, there&#8217;s no doubt that potential customers are out there, using the Internet to conduct self-directed searches for products and services like yours. The most challenging aspect of selling your products is finding a buyer before they&#8230;  <a class="excerpt-read-more" href="../../what-b2b-search-intent-marketing/index.html" title="ReadWhat Is B2B Search Intent Marketing?">Read more &raquo;</a></p>
+    </section>
+    <footer class="article-footer">
+        <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="https://industrialmarketer.com/what-b2b-search-intent-marketing/"/>
+                <span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+            <meta itemprop="name" itemscope content="Industrial Marketer">
+
+            <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                <meta itemprop="url" content="https://industrialmarketer.com/wp-content/themes/ism/img/logo.png">
+                <meta itemprop="width" content="417">
+                <meta itemprop="height" content="141">
+            </span>
+        </span>
+        <meta itemprop="datePublished" content="2022-05-11T04:39:16+00:00"/>
+        <meta itemprop="dateModified" content="2022-05-25T19:36:33+00:00"/>
+    </footer>
+    </article>
+                            <article id="post-252984" role="article" itemscope itemtype="https://schema.org/Article" class="article">
+    <header class="article-header">
+        <h1 itemprop="name"><span class="post-type icon-post" title="Blog Post"></span><a href="../../approach-seo-for-manufacturers/index.html">How to Approach SEO for Manufacturers</a></h1>
+        <div class="subhead" itemprop="headline">Is your manufacturing website ranking for relevant keywords? Use these tips to refine your approach.</div>
+            <div class="row byline">
+        <div class="col-sm-12">
+            <span class="col"><span class="icon icon-pen"></span> <em>By</em> <span itemprop="author"><a href="../../author/eshippey/index.html" title="Posts by Ellie Shippey">Ellie Shippey</a></span></span>
+            <span class="col time hidden"><span class="icon icon-date"></span> <em>Posted on</em> <time class="updated" content="May 11, 2022" itemprop="datePublished">May 11, 2022</time></span>
+            <span class="col hidden-xs"><span class="icon icon-date"></span> 4 minute read</span>
+        </div>
+    </div>        <a href="../../approach-seo-for-manufacturers/index.html" itemprop="url">
+            <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                
+                <img data-src="https://industrialmarketer.com/wp-content/uploads/2022/05/SEO-for-Manufacturers-642x347.jpeg" src="../../wp-content/themes/ism/img/blank.gif" alt="SEO for Manufacturers" width="642" height="347" class="img-responsive article-image lazy" />                <meta itemprop="url" content="https://industrialmarketer.com/wp-content/uploads/2022/05/SEO-for-Manufacturers-642x347.jpeg">
+                <meta itemprop="width" content="642">
+                <meta itemprop="height" content="347">
+            </div>
+        </a>
+    </header>
+    <section class="clearfix content" itemprop="articleBody">
+        <p>Organic traffic is one of the principal lead-generation approaches for many industries, which means that SEO for manufacturers should be of primary importance. However, most manufacturing firms are still behind the curve when it comes to this invaluable marketing channel. And it is understandable&nbsp;— SEO is a complicated process, especially for a segment that hasn’t&#8230;  <a class="excerpt-read-more" href="../../approach-seo-for-manufacturers/index.html" title="ReadHow to Approach SEO for Manufacturers">Read more &raquo;</a></p>
+    </section>
+    <footer class="article-footer">
+        <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="https://industrialmarketer.com/approach-seo-for-manufacturers/"/>
+                <span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+            <meta itemprop="name" itemscope content="Industrial Marketer">
+
+            <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                <meta itemprop="url" content="https://industrialmarketer.com/wp-content/themes/ism/img/logo.png">
+                <meta itemprop="width" content="417">
+                <meta itemprop="height" content="141">
+            </span>
+        </span>
+        <meta itemprop="datePublished" content="2022-05-11T03:46:01+00:00"/>
+        <meta itemprop="dateModified" content="2022-05-25T19:36:51+00:00"/>
+    </footer>
+    </article>
+                            <article id="post-252808" role="article" itemscope itemtype="https://schema.org/Article" class="article">
+    <header class="article-header">
+        <h1 itemprop="name"><span class="post-type icon-post" title="Blog Post"></span><a href="../../what-makes-seo-primary-source-b2b-leads/index.html">What Makes SEO a Primary Source of B2B Leads?</a></h1>
+        <div class="subhead" itemprop="headline">Try as they might, other channels just can't seem to unseat SEO as the best source for leads.</div>
+            <div class="row byline">
+        <div class="col-sm-12">
+            <span class="col"><span class="icon icon-pen"></span> <em>By</em> <span itemprop="author"><a href="../../author/lmassey/index.html" title="Posts by Lynette Massey">Lynette Massey</a></span></span>
+            <span class="col time hidden"><span class="icon icon-date"></span> <em>Posted on</em> <time class="updated" content="Oct 19, 2021" itemprop="datePublished">Oct 19, 2021</time></span>
+            <span class="col hidden-xs"><span class="icon icon-date"></span> 5 minute read</span>
+        </div>
+    </div>        <a href="../../what-makes-seo-primary-source-b2b-leads/index.html" itemprop="url">
+            <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                
+                <img data-src="https://industrialmarketer.com/wp-content/uploads/2021/10/SEO_B2B_Leads-642x347.jpeg" src="../../wp-content/themes/ism/img/blank.gif" alt="SEO_B2B_Leads" width="642" height="347" class="img-responsive article-image lazy" />                <meta itemprop="url" content="https://industrialmarketer.com/wp-content/uploads/2021/10/SEO_B2B_Leads-642x347.jpeg">
+                <meta itemprop="width" content="642">
+                <meta itemprop="height" content="347">
+            </div>
+        </a>
+    </header>
+    <section class="clearfix content" itemprop="articleBody">
+        <p>SEO, or search engine optimization, is critical for any business that wishes to increase organic website traffic and drive B2B leads. The better visibility of your pages in search results, the more likely you are to attract future and existing customers. This holds particularly true for organic B2B searches where the potential customer is looking&#8230;  <a class="excerpt-read-more" href="../../what-makes-seo-primary-source-b2b-leads/index.html" title="ReadWhat Makes SEO a Primary Source of B2B Leads?">Read more &raquo;</a></p>
+    </section>
+    <footer class="article-footer">
+        <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="https://industrialmarketer.com/what-makes-seo-primary-source-b2b-leads/"/>
+                <span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+            <meta itemprop="name" itemscope content="Industrial Marketer">
+
+            <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                <meta itemprop="url" content="https://industrialmarketer.com/wp-content/themes/ism/img/logo.png">
+                <meta itemprop="width" content="417">
+                <meta itemprop="height" content="141">
+            </span>
+        </span>
+        <meta itemprop="datePublished" content="2021-10-19T22:49:59+00:00"/>
+        <meta itemprop="dateModified" content="2022-05-25T19:43:28+00:00"/>
+    </footer>
+    </article>
+                            <article id="post-252672" role="article" itemscope itemtype="https://schema.org/Article" class="article">
+    <header class="article-header">
+        <h1 itemprop="name"><span class="post-type icon-post" title="Blog Post"></span><a href="../../10-simple-steps-to-boost-digital-marketing-for-manufacturers/index.html">10 Simple Steps to Boost Digital Marketing for Manufacturers</a></h1>
+        <div class="subhead" itemprop="headline">What can you do to improve performance and make the case for digital? These simple ideas work.</div>
+            <div class="row byline">
+        <div class="col-sm-12">
+            <span class="col"><span class="icon icon-pen"></span> <em>By</em> <span itemprop="author"><a href="../../author/nelsjensen/index.html" title="Posts by Nels Jensen">Nels Jensen</a></span></span>
+            <span class="col time hidden"><span class="icon icon-date"></span> <em>Posted on</em> <time class="updated" content="Jul 13, 2021" itemprop="datePublished">Jul 13, 2021</time></span>
+            <span class="col hidden-xs"><span class="icon icon-date"></span> 5 minute read</span>
+        </div>
+    </div>        <a href="../../10-simple-steps-to-boost-digital-marketing-for-manufacturers/index.html" itemprop="url">
+            <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                
+                <img data-src="https://industrialmarketer.com/wp-content/uploads/2021/07/Digital_Marketing_for_Manufacturers-642x347.jpg" src="../../wp-content/themes/ism/img/blank.gif" alt="Digital_Marketing_for_Manufacturers" width="642" height="347" class="img-responsive article-image lazy" />                <meta itemprop="url" content="https://industrialmarketer.com/wp-content/uploads/2021/07/Digital_Marketing_for_Manufacturers-642x347.jpg">
+                <meta itemprop="width" content="642">
+                <meta itemprop="height" content="347">
+            </div>
+        </a>
+    </header>
+    <section class="clearfix content" itemprop="articleBody">
+        <p>Looking at the present state of digital marketing for manufacturers, we know many manufacturers are just beginning to realize that digital marketing is at a tipping point where it is no longer optional and must become a bigger part of any marketing plan for a manufacturing company. And we also realize that manufacturing marketing is&#8230;  <a class="excerpt-read-more" href="../../10-simple-steps-to-boost-digital-marketing-for-manufacturers/index.html" title="Read10 Simple Steps to Boost Digital Marketing for Manufacturers">Read more &raquo;</a></p>
+    </section>
+    <footer class="article-footer">
+        <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="https://industrialmarketer.com/10-simple-steps-to-boost-digital-marketing-for-manufacturers/"/>
+                <span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+            <meta itemprop="name" itemscope content="Industrial Marketer">
+
+            <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                <meta itemprop="url" content="https://industrialmarketer.com/wp-content/themes/ism/img/logo.png">
+                <meta itemprop="width" content="417">
+                <meta itemprop="height" content="141">
+            </span>
+        </span>
+        <meta itemprop="datePublished" content="2021-07-13T17:17:31+00:00"/>
+        <meta itemprop="dateModified" content="2022-06-03T00:18:30+00:00"/>
+    </footer>
+    </article>
+                            <article id="post-252652" role="article" itemscope itemtype="https://schema.org/Article" class="article">
+    <header class="article-header">
+        <h1 itemprop="name"><span class="post-type icon-post" title="Blog Post"></span><a href="../../7-tips-construction-company-seo/index.html">7 Tips for Construction Company SEO</a></h1>
+        <div class="subhead" itemprop="headline">Your website should be consciously engineered to rank with search engines. Use these tips to move up in SERPs.</div>
+            <div class="row byline">
+        <div class="col-sm-12">
+            <span class="col"><span class="icon icon-pen"></span> <em>By</em> <span itemprop="author"><a href="../../author/tabsalikov/index.html" title="Posts by Tim Absalikov">Tim Absalikov</a></span></span>
+            <span class="col time hidden"><span class="icon icon-date"></span> <em>Posted on</em> <time class="updated" content="Jul 7, 2021" itemprop="datePublished">Jul 7, 2021</time></span>
+            <span class="col hidden-xs"><span class="icon icon-date"></span> 5 minute read</span>
+        </div>
+    </div>        <a href="../../7-tips-construction-company-seo/index.html" itemprop="url">
+            <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                
+                <img data-src="https://industrialmarketer.com/wp-content/uploads/2021/07/Construction_Company_SEO-642x347.jpeg" src="../../wp-content/themes/ism/img/blank.gif" alt="Construction_Company_SEO" width="642" height="347" class="img-responsive article-image lazy" />                <meta itemprop="url" content="https://industrialmarketer.com/wp-content/uploads/2021/07/Construction_Company_SEO-642x347.jpeg">
+                <meta itemprop="width" content="642">
+                <meta itemprop="height" content="347">
+            </div>
+        </a>
+    </header>
+    <section class="clearfix content" itemprop="articleBody">
+        <p>Construction company SEO is an essential part of the digital marketing mix for any construction company that seeks to raise awareness for its business and convert leads. SEO works by boosting your website&#8217;s ranking with search engines for phrases and words related to your business. This article offers seven significant tips relating to SEO for&#8230;  <a class="excerpt-read-more" href="../../7-tips-construction-company-seo/index.html" title="Read7 Tips for Construction Company SEO">Read more &raquo;</a></p>
+    </section>
+    <footer class="article-footer">
+        <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="https://industrialmarketer.com/7-tips-construction-company-seo/"/>
+                <span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+            <meta itemprop="name" itemscope content="Industrial Marketer">
+
+            <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                <meta itemprop="url" content="https://industrialmarketer.com/wp-content/themes/ism/img/logo.png">
+                <meta itemprop="width" content="417">
+                <meta itemprop="height" content="141">
+            </span>
+        </span>
+        <meta itemprop="datePublished" content="2021-07-07T05:36:53+00:00"/>
+        <meta itemprop="dateModified" content="2022-05-26T20:42:17+00:00"/>
+    </footer>
+    </article>
+                            <nav class="post-nav text-center"><ul class="pagination"><li class="active"><span class="active">01</span></li><li><a href="page/2/index.html">02</a></li><li><a href="page/3/index.html">03</a></li><li><a href="page/2/index.html" title="next">&raquo;</a></li><li class="next"><a href="page/3/index.html">Last</a></li></ul></nav>            
+        </div>
+        <div class="sidebar" id="sidebar">
+    <div id="sidebar-container">
+        <div class="row hidden-xs">
+            <div class="col-sm-12">
+                <h3 class="navigate">Navigate</h3>
+            </div>
+        </div>
+        <div class="hr"></div>
+                    <div class="row">
+                <div class="col-sm-12">
+                    <div class="subscribe">
+                        <div class="h4">SUBSCRIBE</div>
+                        Sign up to receive the latest B2B marketing insights and articles in your inbox.
+                        <div class="_form_1 ac-reset"></div><script src="https://industrial-marketer.activehosted.com/f/embed.php?id=1" type="text/javascript" charset="utf-8"></script>
+                    </div>
+                </div>
+            </div>
+            <div class="hr"></div>
+                <div class="row social-links text-center">
+            <div class="col-sm-12">
+                <a href="https://www.facebook.com/IndustrialMarketer?fref=ts" target="_blank" rel="noopener"><span class="icon icon-fb"></span><span class="sr-only">Visit us on Facebook</span></a>
+                <a href="https://twitter.com/indmktr" target="_blank" rel="noopener"><span class="icon icon-tw"></span><span class="sr-only">Visit us on Twitter</span></a>
+                <a href="https://www.linkedin.com/company/industrialmarketer/" target="_blank" rel="noopener"><span class="icon icon-in"><span class="sr-only">Connect on Linkedin</span></span></a>
+            </div>
+        </div>
+        <div class="hr"></div>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h4 style="padding: 3rem 0 0rem;margin: 0;">TUNE IN TO THE PODCAST</h4>
+                <div style="margin:0 0 2rem;">
+                    <a href="https://www.buzzsprout.com/1056112" target="_blank">
+                        <img src="../../wp-content/themes/ism/ads/industrial-marketer-podcase.gif" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="hr"></div>
+                    <div id="text-2" class="widget widget_text"><h4 class="widgettitle">Fellow Industrial Marketers</h4>			<div class="textwidget"><ul class="list-unstyled">
+<li><a href="http://www.b2bmarketinginsider.com/" target="_blank" rel="noopener">B2B Marketing Insider</a></li>
+<li><a href="https://www.industrialmarketingtoday.com/" target="_blank" rel="noopener">Industrial Marketing Today</a></li>
+<li><a href="https://www.nist.gov/blogs/manufacturing-innovation-blog" target="_blank" rel="noopener">Manufacturing Innovation Blog</a></li>
+<li><a href="https://marketingmaven.globalspec.com/" target="_blank" rel="noopener">Marketing Maven</a></li>
+<li><a href="https://blog.thomasnet.com/" target="_blank" rel="noopener">The Thomas Blog</a></li>
+</ul></div>
+		</div>            <div class="hr"></div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="medium-rectangle hidden-sm">
+                <a href="https://industrialstrengthmarketing.com/industrial-marketing-budget-guide-2022?utm_source=industrial-marketer&amp;utm_medium=referral&amp;utm_campaign=q4_2021&amp;utm_content=display-ad">
+            <img src="../../wp-content/themes/ism/ads/budget-guide-2022.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="hr"></div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h4>Popular Articles</h4>
+                <ul class="list-unstyled sidebar-posts">
+                                                                    <li>
+                            <span class="post-type icon-post" title="Blog Post"></span><a href="../../top-5-types-marketing-content-awareness-phase/index.html">
+                                The Top 5 Types of Marketing Content for the Awareness Phase                            </a>
+                        </li>
+                                                                    <li>
+                            <span class="post-type icon-post" title="Blog Post"></span><a href="../../growth-marketing-logistics-companies/index.html">
+                                Growth Marketing for Logistics Companies                            </a>
+                        </li>
+                                                                    <li>
+                            <span class="post-type icon-post" title="Blog Post"></span><a href="../../how-leverage-todays-manufacturing-trade-shows/index.html">
+                                How to Leverage Today's Manufacturing Trade Shows                            </a>
+                        </li>
+                                                                    <li>
+                            <span class="post-type icon-post" title="Blog Post"></span><a href="../../how-digital-marketing-changing-manufacturing-industry/index.html">
+                                How Digital Marketing Is Changing the Manufacturing Industry                            </a>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+</div>
+
+<footer class="footer" role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-lg-offset-1">
+                <div class="footer-logo-container visible-lg "><a href="../../index.html"><img src="../../wp-content/themes/ism/img/logo-footer.png" width="342" height="84" class="logo img-responsive" alt="Industrial Marketer"/></a></div>
+            </div>
+            <div class="col-lg-5 col-sm-12">
+                <ul class="list-inline">
+                    <li><a href="mailto:advertising@industrialmarketer.com" class="mailto" target="_blank">Advertise</a></li>
+                    <li><a href="../../privacy-policy/index.html">Privacy Policy</a></li>
+                    <li><a href="../../terms-of-use/index.html">Terms</a></li>
+                    <li><a href="../../about/index.html">About</a></li>
+                    <li><a href="../../contact-us/index.html">Contact Us</a></li>
+                </ul>
+                <span class="source-org copyright">&copy; 2003-2022 <a href="https://industrialstrengthmarketing.com/" target="_blank" rel="noopener">Industrial Strength Marketing</a>. All Rights Reserved.</span>
+            </div>
+            <div class="col-md-3 social">
+                <br>
+                <a href="https://www.facebook.com/IndustrialMarketer" target="_blank" rel="noopener"><span class="icon icon-fb"></span><span class="sr-only">Visit us on Facebook</span></a> 
+                <a href="https://twitter.com/indmktr" target="_blank" rel="noopener"><span class="icon icon-tw"></span><span class="sr-only">Find us on Twitter</span></a> 
+                <a href="https://www.linkedin.com/company/industrialmarketer/" target="_blank" rel="noopener"><span class="icon icon-in"></span><span class="sr-only">Connect with us on Linkedin</span></a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <div class="container">
+        <div class="row">
+                    </div>
+    </div>
+<script type='text/javascript' src='../../wp-content/themes/ism/js/scriptse574.js?v=14655736' id='bones-js-js'></script>
+</div>
+    <div id="exit-intent-popup" class="exit-intent-popup">
+        <div id="ei-form-container">
+            <style>
+ ._form_hide { display:none; visibility:hidden; }
+ ._form_show { display:block; visibility:visible; }
+ #_form_3_ ._submit { -webkit-appearance:none; cursor:pointer; font-family:arial, sans-serif; font-size:14px; text-align:center; background:#fff !important; border:0 !important; color:#272524 !important; padding:0px !important; }
+ #_form_3_ ._form_element { position:relative;font-size:0; max-width:100%; }
+ #_form_3_ ._form_element * { font-size:14px; }
+ #_form_3_ ._form_element input[type="text"],#_form_3_ ._form_element input[type="date"],#_form_3_ ._form_element select,#_form_3_ ._form_element textarea:not(.g-recaptcha-response) { display:block; width:100%; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; font-family:inherit; }
+ #_form_3_ ._full_width { width:100%; }
+ #_form_3_ ._form_full_field { display:block; width:100%; margin-bottom:10px; }
+ #_form_3_ input[type="text"]._has_error,#_form_3_ textarea._has_error { border:#f37c7b 1px solid; }
+ #_form_3_ input[type="checkbox"]._has_error { outline:#f37c7b 1px solid; }
+ #_form_3_ ._error { display:block; position:absolute; font-size:14px; z-index:10000001; }
+ #_form_3_ ._error._above { padding-bottom:4px; bottom:39px; left:0; }
+ #_form_3_ ._error._below { padding-top:4px; top:100%; left:0; }
+ #_form_3_ ._error._above ._error-arrow { bottom:0; right:15px; border-left:5px solid transparent; border-right:5px solid transparent; border-top:5px solid #f37c7b; }
+ #_form_3_ ._error._below ._error-arrow { top:0; right:15px; border-left:5px solid transparent; border-right:5px solid transparent; border-bottom:5px solid #f37c7b; }
+ #_form_3_ ._error-inner { padding:8px 12px; background-color:#f37c7b; font-size:14px; font-family:arial, sans-serif; color:#fff; text-align:center; text-decoration:none; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; }
+ #_form_3_ ._error-inner._form_error { margin-bottom:5px; text-align:left; }
+ #_form_3_ ._button-wrapper ._error-inner._form_error { position:static; }
+ #_form_3_ ._error-inner._no_arrow { margin-bottom:10px; }
+ #_form_3_ ._error-arrow { position:absolute; width:0; height:0; }
+ #_form_3_ ._error-html { margin-bottom:10px; }
+
+ #_form_3_ { position:relative;}
+ 
+ 
+ #_form_3_._form_3 { width:100%; }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Lato&amp;family=Montserrat&amp;family=Roboto&amp;display=swap" rel="stylesheet">
+  <form method="POST" action="https://industrial-marketer.activehosted.com/proc.php" id="_form_3_" class="_form _form_3">
+    <input type="hidden" name="u" value="3" />
+    <input type="hidden" name="f" value="3" />
+    <input type="hidden" name="s" />
+    <input type="hidden" name="c" value="0" />
+    <input type="hidden" name="m" value="0" />
+    <input type="hidden" name="act" value="sub" />
+    <input type="hidden" name="v" value="2" />
+    <div class="_form-content">
+      <div class="_form_element _x15240308 _full_width _clear" >
+        <div class="_html-code">
+          <strong>
+            Not so fast!
+          </strong>
+          <br>
+            Don’t miss our latest B2B marketing insights. Sign up to receive <em>Industrial Marketer</em> in your inbox.
+        </div>
+      </div>
+      <div class="finline">
+            <input type="text" id="emailf" name="email" placeholder="you@email.com" required/>
+            <button id="_form_3_submit" class="_submit" type="submit">Sign Me Up</button>
+      </div>
+    </div>
+    <div class="_form-thank-you" style="display:none;">
+    Thanks and all
+    </div>
+  </form><script type="text/javascript">
+window.cfields = [];
+window._show_thank_you = function(id, message, trackcmp_url, email) {
+  var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
+  form.querySelector('._form-content').style.display = 'none';
+  thank_you.innerHTML = message;
+  thank_you.style.display = 'block';
+  const vgoAlias = typeof visitorGlobalObjectAlias === 'undefined' ? 'vgo' : visitorGlobalObjectAlias;
+  var visitorObject = window[vgoAlias];
+  if (email && typeof visitorObject !== 'undefined') {
+    visitorObject('setEmail', email);
+    visitorObject('update');
+  } else if (typeof(trackcmp_url) != 'undefined' && trackcmp_url) {
+    // Site tracking URL to use after inline form submission.
+    _load_script(trackcmp_url);
+  }
+  if (typeof window._form_callback !== 'undefined') window._form_callback(id);
+};
+window._show_error = function(id, message, html) {
+  var form = document.getElementById('_form_' + id + '_'), err = document.createElement('div'), button = form.querySelector('button'), old_error = form.querySelector('._form_error');
+  if (old_error) old_error.parentNode.removeChild(old_error);
+  err.innerHTML = message;
+  err.className = '_error-inner _form_error _no_arrow';
+  var wrapper = document.createElement('div');
+  wrapper.className = '_form-inner';
+  wrapper.appendChild(err);
+  button.parentNode.insertBefore(wrapper, button);
+  document.querySelector('[id^="_form"][id$="_submit"]').disabled = false;
+  if (html) {
+    var div = document.createElement('div');
+    div.className = '_error-html';
+    div.innerHTML = html;
+    err.appendChild(div);
+  }
+};
+window._load_script = function(url, callback) {
+  var head = document.querySelector('head'), script = document.createElement('script'), r = false;
+  script.type = 'text/javascript';
+  script.charset = 'utf-8';
+  script.src = url;
+  if (callback) {
+    script.onload = script.onreadystatechange = function() {
+      if (!r && (!this.readyState || this.readyState == 'complete')) {
+        r = true;
+        callback();
+      }
+    };
+  }
+  head.appendChild(script);
+};
+(function() {
+  if (window.location.search.search("excludeform") !== -1) return false;
+  var getCookie = function(name) {
+    var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
+    return match ? match[2] : null;
+  }
+  var setCookie = function(name, value) {
+    var now = new Date();
+    var time = now.getTime();
+    var expireTime = time + 1000 * 60 * 60 * 24 * 365;
+    now.setTime(expireTime);
+    document.cookie = name + '=' + value + '; expires=' + now + ';path=/';
+  }
+      var addEvent = function(element, event, func) {
+    if (element.addEventListener) {
+      element.addEventListener(event, func);
+    } else {
+      var oldFunc = element['on' + event];
+      element['on' + event] = function() {
+        oldFunc.apply(this, arguments);
+        func.apply(this, arguments);
+      };
+    }
+  }
+  var _removed = false;
+  var form_to_submit = document.getElementById('_form_3_');
+  var allInputs = form_to_submit.querySelectorAll('input, select, textarea'), tooltips = [], submitted = false;
+
+  var getUrlParam = function(name) {
+    var regexStr = '[\?&]' + name + '=([^&#]*)';
+    var results = new RegExp(regexStr, 'i').exec(window.location.href);
+    return results != undefined ? decodeURIComponent(results[1]) : false;
+  };
+
+  for (var i = 0; i < allInputs.length; i++) {
+    var regexStr = "field\\[(\\d+)\\]";
+    var results = new RegExp(regexStr).exec(allInputs[i].name);
+    if (results != undefined) {
+      allInputs[i].dataset.name = window.cfields[results[1]];
+    } else {
+      allInputs[i].dataset.name = allInputs[i].name;
+    }
+    var fieldVal = getUrlParam(allInputs[i].dataset.name);
+
+    if (fieldVal) {
+      if (allInputs[i].dataset.autofill === "false") {
+        continue;
+      }
+      if (allInputs[i].type == "radio" || allInputs[i].type == "checkbox") {
+        if (allInputs[i].value == fieldVal) {
+          allInputs[i].checked = true;
+        }
+      } else {
+        allInputs[i].value = fieldVal;
+      }
+    }
+  }
+
+  var remove_tooltips = function() {
+    for (var i = 0; i < tooltips.length; i++) {
+      tooltips[i].tip.parentNode.removeChild(tooltips[i].tip);
+    }
+    tooltips = [];
+  };
+  var remove_tooltip = function(elem) {
+    for (var i = 0; i < tooltips.length; i++) {
+      if (tooltips[i].elem === elem) {
+        tooltips[i].tip.parentNode.removeChild(tooltips[i].tip);
+        tooltips.splice(i, 1);
+        return;
+      }
+    }
+  };
+  var create_tooltip = function(elem, text) {
+    var tooltip = document.createElement('div'), arrow = document.createElement('div'), inner = document.createElement('div'), new_tooltip = {};
+    if (elem.type != 'radio' && elem.type != 'checkbox') {
+      tooltip.className = '_error';
+      arrow.className = '_error-arrow';
+      inner.className = '_error-inner';
+      inner.innerHTML = text;
+      tooltip.appendChild(arrow);
+      tooltip.appendChild(inner);
+      elem.parentNode.appendChild(tooltip);
+    } else {
+      tooltip.className = '_error-inner _no_arrow';
+      tooltip.innerHTML = text;
+      elem.parentNode.insertBefore(tooltip, elem);
+      new_tooltip.no_arrow = true;
+    }
+    new_tooltip.tip = tooltip;
+    new_tooltip.elem = elem;
+    tooltips.push(new_tooltip);
+    return new_tooltip;
+  };
+  var resize_tooltip = function(tooltip) {
+    var rect = tooltip.elem.getBoundingClientRect();
+    var doc = document.documentElement, scrollPosition = rect.top - ((window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0));
+    if (scrollPosition < 40) {
+      tooltip.tip.className = tooltip.tip.className.replace(/ ?(_above|_below) ?/g, '') + ' _below';
+    } else {
+      tooltip.tip.className = tooltip.tip.className.replace(/ ?(_above|_below) ?/g, '') + ' _above';
+    }
+  };
+  var resize_tooltips = function() {
+    if (_removed) return;
+    for (var i = 0; i < tooltips.length; i++) {
+      if (!tooltips[i].no_arrow) resize_tooltip(tooltips[i]);
+    }
+  };
+  var validate_field = function(elem, remove) {
+    var tooltip = null, value = elem.value, no_error = true;
+    remove ? remove_tooltip(elem) : false;
+    if (elem.type != 'checkbox') elem.className = elem.className.replace(/ ?_has_error ?/g, '');
+    if (elem.getAttribute('required') !== null) {
+      if (elem.type == 'radio' || (elem.type == 'checkbox' && /any/.test(elem.className))) {
+        var elems = form_to_submit.elements[elem.name];
+        if (!(elems instanceof NodeList || elems instanceof HTMLCollection) || elems.length <= 1) {
+          no_error = elem.checked;
+        }
+        else {
+          no_error = false;
+          for (var i = 0; i < elems.length; i++) {
+            if (elems[i].checked) no_error = true;
+          }
+        }
+        if (!no_error) {
+          tooltip = create_tooltip(elem, "Please select an option.");
+        }
+      } else if (elem.type =='checkbox') {
+        var elems = form_to_submit.elements[elem.name], found = false, err = [];
+        no_error = true;
+        for (var i = 0; i < elems.length; i++) {
+          if (elems[i].getAttribute('required') === null) continue;
+          if (!found && elems[i] !== elem) return true;
+          found = true;
+          elems[i].className = elems[i].className.replace(/ ?_has_error ?/g, '');
+          if (!elems[i].checked) {
+            no_error = false;
+            elems[i].className = elems[i].className + ' _has_error';
+            err.push("Checking %s is required".replace("%s", elems[i].value));
+          }
+        }
+        if (!no_error) {
+          tooltip = create_tooltip(elem, err.join('<br/>'));
+        }
+      } else if (elem.tagName == 'SELECT') {
+        var selected = true;
+        if (elem.multiple) {
+          selected = false;
+          for (var i = 0; i < elem.options.length; i++) {
+            if (elem.options[i].selected) {
+              selected = true;
+              break;
+            }
+          }
+        } else {
+          for (var i = 0; i < elem.options.length; i++) {
+            if (elem.options[i].selected && !elem.options[i].value) {
+              selected = false;
+            }
+          }
+        }
+        if (!selected) {
+          elem.className = elem.className + ' _has_error';
+          no_error = false;
+          tooltip = create_tooltip(elem, "Please select an option.");
+        }
+      } else if (value === undefined || value === null || value === '') {
+        elem.className = elem.className + ' _has_error';
+        no_error = false;
+        tooltip = create_tooltip(elem, "This field is required.");
+      }
+    }
+    if (no_error && elem.name == 'email') {
+      if (!value.match(/^[\+_a-z0-9-'&=]+(\.[\+_a-z0-9-']+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/i)) {
+        elem.className = elem.className + ' _has_error';
+        no_error = false;
+        tooltip = create_tooltip(elem, "Enter a valid email address.");
+      }
+    }
+    if (no_error && /date_field/.test(elem.className)) {
+      if (!value.match(/^\d\d\d\d-\d\d-\d\d$/)) {
+        elem.className = elem.className + ' _has_error';
+        no_error = false;
+        tooltip = create_tooltip(elem, "Enter a valid date.");
+      }
+    }
+    tooltip ? resize_tooltip(tooltip) : false;
+    return no_error;
+  };
+  var needs_validate = function(el) {
+        if(el.getAttribute('required') !== null){
+            return true
+        }
+        if(el.name === 'email' && el.value !== ""){
+            return true
+        }
+        return false
+  };
+  var validate_form = function(e) {
+    var err = form_to_submit.querySelector('._form_error'), no_error = true;
+    if (!submitted) {
+      submitted = true;
+      for (var i = 0, len = allInputs.length; i < len; i++) {
+        var input = allInputs[i];
+        if (needs_validate(input)) {
+          if (input.type == 'text') {
+            addEvent(input, 'blur', function() {
+              this.value = this.value.trim();
+              validate_field(this, true);
+            });
+            addEvent(input, 'input', function() {
+              validate_field(this, true);
+            });
+          } else if (input.type == 'radio' || input.type == 'checkbox') {
+            (function(el) {
+              var radios = form_to_submit.elements[el.name];
+              for (var i = 0; i < radios.length; i++) {
+                addEvent(radios[i], 'click', function() {
+                  validate_field(el, true);
+                });
+              }
+            })(input);
+          } else if (input.tagName == 'SELECT') {
+            addEvent(input, 'change', function() {
+              validate_field(this, true);
+            });
+          } else if (input.type == 'textarea'){
+            addEvent(input, 'input', function() {
+              validate_field(this, true);
+            });
+          }
+        }
+      }
+    }
+    remove_tooltips();
+    for (var i = 0, len = allInputs.length; i < len; i++) {
+      var elem = allInputs[i];
+      if (needs_validate(elem)) {
+        if (elem.tagName.toLowerCase() !== "select") {
+          elem.value = elem.value.trim();
+        }
+        validate_field(elem) ? true : no_error = false;
+      }
+    }
+    if (!no_error && e) {
+      e.preventDefault();
+    }
+    resize_tooltips();
+    return no_error;
+  };
+  addEvent(window, 'resize', resize_tooltips);
+  addEvent(window, 'scroll', resize_tooltips);
+  window._old_serialize = null;
+  if (typeof serialize !== 'undefined') window._old_serialize = window.serialize;
+  _load_script("../../../d3rxaij56vjege.cloudfront.net/form-serialize/0.3/serialize.min.js", function() {
+    window._form_serialize = window.serialize;
+    if (window._old_serialize) window.serialize = window._old_serialize;
+  });
+  var form_submit = function(e) {
+    e.preventDefault();
+    if (validate_form()) {
+      // use this trick to get the submit button & disable it using plain javascript
+      document.querySelector('#_form_3_submit').disabled = true;
+            var serialized = _form_serialize(document.getElementById('_form_3_')).replace('/%0A/g', '\\n');
+      var err = form_to_submit.querySelector('._form_error');
+      err ? err.parentNode.removeChild(err) : false;
+      _load_script('https://industrial-marketer.activehosted.com/proc.php?' + serialized + '&jsonp=true');
+    }
+    return false;
+  };
+  addEvent(form_to_submit, 'submit', form_submit);
+})();
+
+</script>            <button class="close">
+                <svg style="pointer-events: none;" xmlns='http://www.w3.org/2000/svg' width="60" height="60" viewBox='0 0 512 512'><title>Close</title><path fill='none' stroke='currentColor'stroke-width='16' d='M368 368L144 144M368 144L144 368'/></svg>
+            </button>
+        </div>
+    </div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-1e239afaaad019bbf58","applicationID":"377067338","transactionName":"YAAHZ0pYChZSUhdbXVlKMEFRFg0LV1QbHEJfFQ==","queueTime":0,"applicationTime":278,"atts":"TEcEEQJCGRg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from industrialmarketer.com/strategy/search-engine-marketing-strategy/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Oct 2022 17:33:34 GMT -->
+</html>
